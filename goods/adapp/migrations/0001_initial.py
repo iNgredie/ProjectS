@@ -7,22 +7,49 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='Ad',
+            name="Ad",
             fields=[
-                ('id', models.AutoField(primary_key=True, serialize=False)),
-                ('title', models.CharField(max_length=255, verbose_name='Название')),
-                ('author', models.CharField(max_length=100, verbose_name='Автор')),
-                ('content', models.TextField(blank=True, verbose_name='Описание')),
-                ('create_at', models.DateTimeField(auto_now_add=True, verbose_name='Опубликовано')),
-                ('photo', models.ImageField(upload_to='photos/', verbose_name='Фотография')),
-                ('price', models.IntegerField(verbose_name='Цена')),
-                ('views', models.IntegerField(default=0, verbose_name='Кол-во просмотров')),
-                ('tag', models.IntegerField(choices=[(1, 'Транспорт'), (2, 'Для дома и дачи'), (3, 'Для бизнеса'), (4, 'Недвижимость'), (5, 'Бытовая электроника'), (6, 'Работа'), (7, 'Услуги'), (8, 'Хобби и отдых'), (9, 'Личные вещи'), (10, 'Животные')], verbose_name='Теги')),
+                ("id", models.AutoField(primary_key=True, serialize=False)),
+                ("title", models.CharField(max_length=255, verbose_name="Название")),
+                ("author", models.CharField(max_length=100, verbose_name="Автор")),
+                ("content", models.TextField(blank=True, verbose_name="Описание")),
+                (
+                    "create_at",
+                    models.DateTimeField(
+                        auto_now_add=True, verbose_name="Опубликовано"
+                    ),
+                ),
+                (
+                    "photo",
+                    models.ImageField(upload_to="photos/", verbose_name="Фотография"),
+                ),
+                ("price", models.IntegerField(verbose_name="Цена")),
+                (
+                    "views",
+                    models.IntegerField(default=0, verbose_name="Кол-во просмотров"),
+                ),
+                (
+                    "tag",
+                    models.IntegerField(
+                        choices=[
+                            (1, "Транспорт"),
+                            (2, "Для дома и дачи"),
+                            (3, "Для бизнеса"),
+                            (4, "Недвижимость"),
+                            (5, "Бытовая электроника"),
+                            (6, "Работа"),
+                            (7, "Услуги"),
+                            (8, "Хобби и отдых"),
+                            (9, "Личные вещи"),
+                            (10, "Животные"),
+                        ],
+                        verbose_name="Теги",
+                    ),
+                ),
             ],
         ),
     ]

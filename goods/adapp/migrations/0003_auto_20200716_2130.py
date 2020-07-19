@@ -6,29 +6,36 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('adapp', '0002_auto_20200715_2241'),
+        ("adapp", "0002_auto_20200715_2241"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Tag',
+            name="Tag",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('title', models.CharField(max_length=50)),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("title", models.CharField(max_length=50)),
             ],
         ),
-        migrations.RemoveField(
-            model_name='ad',
-            name='tag',
-        ),
+        migrations.RemoveField(model_name="ad", name="tag",),
         migrations.AlterField(
-            model_name='ad',
-            name='views',
-            field=models.IntegerField(default=0, editable=False, verbose_name='Кол-во просмотров'),
+            model_name="ad",
+            name="views",
+            field=models.IntegerField(
+                default=0, editable=False, verbose_name="Кол-во просмотров"
+            ),
         ),
         migrations.AddField(
-            model_name='ad',
-            name='tags',
-            field=models.ManyToManyField(to='adapp.Tag', verbose_name='Теги'),
+            model_name="ad",
+            name="tags",
+            field=models.ManyToManyField(to="adapp.Tag", verbose_name="Теги"),
         ),
     ]
