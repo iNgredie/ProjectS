@@ -1,0 +1,51 @@
+[
+  {
+    "model": "adapp.tag",
+    "pk": 1,
+    "fields": {
+      "name": "Одежда и аксессуары"
+    }
+  },
+  {
+    "model": "adapp.tag",
+    "pk": 2,
+    "fields": {
+      "name": "Дом и интерьер"
+    }
+  },
+  {
+    "model": "adapp.tag",
+    "pk": 3,
+    "fields": {
+      "name": "Подарки"
+    }
+  },
+  {
+    "model": "adapp.tag",
+    "pk": 4,
+    "fields": {
+      "name": "Куклы и игрушки"
+    }
+  },
+  {
+    "model": "adapp.tag",
+    "pk": 5,
+    "fields": {
+      "name": "Для детей"
+    }
+  },
+  {
+    "model": "adapp.tag",
+    "pk": 6,
+    "fields": {
+      "name": "Материалы"
+    }
+  },
+  {
+    "model": "adapp.tag",
+    "pk": 7,
+    "fields": {
+      "name": "Услуги"
+    }
+  }
+]
