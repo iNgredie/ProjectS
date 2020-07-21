@@ -144,6 +144,5 @@ cython_debug/
 # db migrations
 migrations/
 media
-.sqlite3
+db.sqlite
 __pycache__
-goods/adapp/__pycache__
