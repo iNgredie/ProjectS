@@ -20,6 +20,7 @@ class TagDetailSerializer(serializers.ModelSerializer):
         model = Tag
         fields = "__all__"
 
+
 #
 # class PhotoSerializer(serializers.ModelSerializer):
 #     class Meta:

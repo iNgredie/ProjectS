@@ -16,7 +16,7 @@ class Ad(models.Model):
     )
     price = models.IntegerField(verbose_name="Цена")
     view_count = models.IntegerField(
-        verbose_name="Кол-во просмотров", default=0, editable=False
+        verbose_name="Количество просмотров", default=0, editable=False
     )
     tag = models.ForeignKey(
         Tag, related_name="tag", on_delete=models.CASCADE, default=0

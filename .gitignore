@@ -143,3 +143,7 @@ cython_debug/
 
 # db migrations
 migrations/
+media
+.sqlite3
+__pycache__
+goods/adapp/__pycache__
